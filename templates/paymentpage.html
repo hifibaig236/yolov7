@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="/static/index.css"/>
+    <link rel="stylesheet" href="/static/global.css"/>
+    <link rel="stylesheet" href="/static/payment_page.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Kantumruy:wght@700&display=swap"
+    />
+
+    <style>
+      @font-face {
+        :font-family: "KoHo";
+        src: url("KoHo SemiBold 600.ttf");
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="payment-page">
+      <img class="paymet-01-icon" alt="" src="/static/public/paymet01@2x.png" />
+      <div class="navbar" id="nav">
+        <div class="navbar-left">
+            <label style="color: white;" for="">Space Finder</label>
+        </div>
+        <div class="navbar-right">
+            <a href="{{url_for('index')}}" class="active">Home</a>
+            <a href="{{url_for('aboutus')}}">About Us</a>
+            <a href="{{url_for('contactus')}}">Contact Us</a>
+            <a href="{{url_for('loginPage')}}">Sign In</a>
+            <a href="{{url_for('logout')}}">Logout</a>
+        </div>
+    </div>
+    <hr style="background-color: white;height: 2px;">
+      <div class="main-frame">
+        <div class="payment">Payment</div>
+        <input class="email-input2"  type="email" required />
+
+        <div class="email2">Email</div>
+        <input class="date-input" type="text" required />
+
+        <div class="date">Date</div>
+        <input class="credit-input" type="text" required />
+
+        <div class="credit-card-no">Credit Card No</div>
+        <button class="submit-btn" autofocus id="submitBtn">
+          <div class="pay-200-pkr">Pay 200 PKR</div>
+        </button>
+      </div>
+      <div class="back-btn">
+        <button class="object1" autofocus id="object">
+          <img class="vector-icon2" alt="" src="./public/vector.svg" />
+
+          <img class="vector-icon3" alt="" src="./public/vector2.svg" />
+        </button>
+      </div>
+    </div>
+
+    <div id="alertPopup" class="popup-overlay" style="display: none">
+      <div class="alert-popup">
+        <div class="popup-frame">
+          <div class="alert">Alert!</div>
+          <div class="are-you-sure">Are you sure you want to logout?</div>
+          <button class="ok-button-yes" autofocus id="popupokButtonYes">
+            <div class="yes">Yes</div>
+          </button>
+          <button class="ok-button-no" autofocus id="popupokButtonNo">
+            <div class="no">No</div>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

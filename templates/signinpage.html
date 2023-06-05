@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>Sign In Page</title>
+  	<link rel="stylesheet" href="/static/signinstyle.css"/>
+    <meta name="viewport" content="initial-scale=1, width=100%" />
+ </head>
+
+<body class="bg-image"> 
+        <div class="reactanglediv">
+         <h1>Sign In </h1>
+         <form class="signin"  action="{{url_for('login')}}" method="post">
+        </div>
+           <input  class="email-input" type="email" name="email" required="" placeholder="enter your email"><br/><br/><br><br><br>
+           <input class="pwrd-input" type="password" name="password" required="" placeholder="enter your password"><br/><br/>
+           <button class="signin-btn" type="submit" >Sign In</button>
+         </form>
+           <h5>Don't have an account?</h5>
+           <a class="signuplink"  href="/signup">Sign Up</a>
+         </div>
+         
+
+</body>
+</html>

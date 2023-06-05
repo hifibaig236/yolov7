@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About</title>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;400&display=swap" rel="stylesheet">
+    
+        <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=brandico">
+        
+        <link rel="stylesheet" href="/static/index.css">
+    </head>
+
+
+
+    <body id="aboutPage">
+        <div class="navbar" id="nav">
+            <div class="navbar-left">
+                <label style="color: white;" for="">Space Finder</label>
+            </div>
+            <div class="navbar-right">
+                <a href="{{url_for('index')}}" >Home</a>
+                <a href="{{url_for('aboutus')}}" class="active">About Us</a>
+                <a href="{{url_for('contactus')}}" >Contact Us</a>
+                <a href="{{url_for('loginPage')}}">Sign In</a>
+            </div>
+        </div>
+        <hr style="background-color: white;height: 2px;">
+
+        <div class="heading">
+            <h4>About Us</h4>
+        </div>
+        <div class="content">
+            <div class="row">
+                <div class="column" style="width: 65%; margin-top: 0%; padding-top: 0%;">
+                    <p style="width: 90%; margin-top: 0%; padding-top: 0%;">
+                        <span style="font-size: 40px ;">S</span>pace Finder is a modern project in field of computer
+                        vision (Video processing).In this project the problem is
+                        to check in a video (camera) whether empty spaces and occupied spaces in the video
+                        are available in the Parking Spaces.</p>
+                        <p style="width: 90%;">
+                        Our goal is to detect the objects( Free, and Occupied spaces in real time)in the video that are
+                        available in the Parking Spaces.Secondly the task
+                        is to classify the vehciles on the bases of their category.
+                    </p>
+                    <button class="moreInfoButton">Read More</button>
+                </div>
+                <div class="column" style="align-items: center; justify-content:
+                    center;padding: auto; width: 35%;">
+                    <img src="/public/vector3.svg" width="70%">
+                </div>
+            </div>
+
+            <div class="row">
+                <ul class="social-buttons" id="demo1">
+                    <li>
+                      <a href="#" class="brandico-twitter-bird"></a>
+                    </li>
+                    <li>
+                      <a href="#" class="brandico-facebook"></a>
+                    </li>
+                    <li>
+                      <a href="#" class="brandico-instagram"></a>
+                    </li>
+                  </ul>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="/static/global.css" />
+    <link rel="stylesheet" href="/static/upload_file.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Kantumruy:wght@700&display=swap"
+    />
+
+    <style>
+      @font-face {
+        :font-family: "KoHo";
+        src: url("KoHo SemiBold 600.ttf");
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="upload-file">
+      <div class="menu-bar2"></div>
+      <a class="about-link2" id="aboutLink">About </a>
+      <a class="payment-link1" href="./payment-page.html">Payment</a>
+      <a class="contactus-link2" id="contactusLink">Contact Us</a>
+      <a class="logout-link2" id="logoutLink">Logout</a>
+      <div class="admin-dashboard">Admin-Dashboard</div>
+      <div class="upload-file1">
+        <input class="file-selected-btn" type="file" required />
+
+        <button class="upload-btn" autofocus id="uploadBtn">
+          <div class="upload">Upload</div>
+        </button>
+        <img class="file-01-1-icon" alt="" src="./public/file01-1@3x.png" />
+      </div>
+      <div class="database">
+        <div class="database1">Database</div>
+        <div class="dbbb-01-1-wrapper">
+          <img class="dbbb-01-1-icon" alt="" src="./public/dbbb01-1@3x.png" />
+        </div>
+      </div>
+      <div class="camears">
+        <div class="cameras">Cameras</div>
+        <div class="cctv-01-1-wrapper">
+          <img class="cctv-01-1-icon" alt="" src="./public/cctv01-1@3x.png" />
+        </div>
+      </div>
+      <div class="report">
+        <div class="reports">Reports</div>
+        <div class="report-01-1-wrapper">
+          <img
+            class="report-01-1-icon"
+            alt=""
+            src="./public/report01-1@3x.png"
+          />
+        </div>
+      </div>
+      <div class="user-activity">
+        <div class="activities">Activities</div>
+        <div class="pic">
+          <img
+            class="activity-01-1-icon"
+            alt=""
+            src="./public/activity01-1@3x.png"
+          />
+        </div>
+      </div>
+      <img class="bg-image-icon3" alt="" src="./public/bgimage11@2x.png" />
+
+      <div class="back-btn1">
+        <button class="object2" autofocus id="object">
+          <img class="vector-icon4" alt="" src="./public/vector.svg" />
+
+          <img class="vector-icon5" alt="" src="./public/vector2.svg" />
+        </button>
+      </div>
+    </div>
+
+    <div id="alertPopup" class="popup-overlay" style="display: none">
+      <div class="alert-popup">
+        <div class="popup-frame">
+          <div class="alert">Alert!</div>
+          <div class="are-you-sure">Are you sure you want to logout?</div>
+          <button class="ok-button-yes" autofocus id="popupokButtonYes">
+            <div class="yes">Yes</div>
+          </button>
+          <button class="ok-button-no" autofocus id="popupokButtonNo">
+            <div class="no">No</div>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var popupokButtonYes = document.getElementById("popupokButtonYes");
+      if (popupokButtonYes) {
+        popupokButtonYes.addEventListener("click", function (e) {
+          window.location.href = "/";
+        });
+      }
+      
+      var popupokButtonNo = document.getElementById("popupokButtonNo");
+      if (popupokButtonNo) {
+        popupokButtonNo.addEventListener("click", function (e) {
+          var popup = e.currentTarget.parentNode;
+          function isOverlay(node) {
+            return !!(
+              node &&
+              node.classList &&
+              node.classList.contains("popup-overlay")
+            );
+          }
+          while (popup && !isOverlay(popup)) {
+            popup = popup.parentNode;
+          }
+          if (isOverlay(popup)) {
+            popup.style.display = "none";
+          }
+        });
+      }
+      
+      var aboutLink = document.getElementById("aboutLink");
+      if (aboutLink) {
+        aboutLink.addEventListener("click", function (e) {
+          window.location.href = "./about.html";
+        });
+      }
+      
+      var contactusLink = document.getElementById("contactusLink");
+      if (contactusLink) {
+        contactusLink.addEventListener("click", function (e) {
+          window.location.href = "./contact-us.html";
+        });
+      }
+      
+      var logoutLink = document.getElementById("logoutLink");
+      if (logoutLink) {
+        logoutLink.addEventListener("click", function () {
+          var popup = document.getElementById("alertPopup");
+          if (!popup) return;
+          var popupStyle = popup.style;
+          if (popupStyle) {
+            popupStyle.display = "flex";
+            popupStyle.zIndex = 100;
+            popupStyle.backgroundColor = "rgba(113, 113, 113, 0.3)";
+            popupStyle.alignItems = "flex-end";
+            popupStyle.justifyContent = "";
+          }
+          popup.setAttribute("closable", "");
+      
+          var onClick =
+            popup.onClick ||
+            function (e) {
+              if (e.target === popup && popup.hasAttribute("closable")) {
+                popupStyle.display = "none";
+              }
+            };
+          popup.addEventListener("click", onClick);
+        });
+      }
+      
+      var uploadBtn = document.getElementById("uploadBtn");
+      if (uploadBtn) {
+        uploadBtn.addEventListener("click", function (e) {
+          window.location.href = "./about.html";
+        });
+      }
+      
+      var object = document.getElementById("object");
+      if (object) {
+        object.addEventListener("click", function (e) {
+          window.location.href = "./output.html";
+        });
+      }
+      </script>
+  </body>
+</html>

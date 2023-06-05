@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="/static/global.css" />
+    <link rel="stylesheet" href="/static/index.css" />
+    <link rel="stylesheet" href="/static/user_interface.css" />
+    
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Kantumruy:wght@700&display=swap"
+    />
+
+    <style>
+      @font-face {
+        :font-family: "KoHo";
+        src: url("KoHo SemiBold 600.ttf");
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar" id="nav">
+      <div class="navbar-left">
+          <label style="color: white;" for="">Space Finder</label>
+      </div>
+      <div class="navbar-right">
+          <a href="{{url_for('index')}}" class="active">Home</a>
+          <a href="{{url_for('aboutus')}}">About Us</a>
+          <a href="{{url_for('contactus')}}">Contact Us</a>
+          <a href="{{url_for('loginPage')}}">Sign In</a>
+          <a href="{{url_for('logout')}}">Logout</a>
+          
+      </div>
+  </div>
+  <hr style="background-color: white;height: 2px;">
+      <a href="{{url_for('uploadFile')}}">
+      <button class="zone1" autofocus id="zone1">
+        <div class="zone11">Zone 1</div>
+      </button>
+    </a>
+      <a href="{{url_for('uploadFile')}}">
+      <button class="zone2" autofocus id="zone2">
+        <div class="zone11">Zone 2</div>
+      </button>
+      </a>
+      <a href="{{url_for('uploadFile')}}">
+      <button class="zone3" autofocus id="zone3">
+        <div class="zone11">Zone 3</div>
+      </button>
+      </a>
+      <a href="{{url_for('uploadFile')}}">
+      <button class="zone6" autofocus id="zone6">
+        <div class="zone11">Zone 6</div>
+      </button>
+      </a>
+      <a href="{{url_for('uploadFile')}}">
+      <button class="zone5" autofocus id="zone5">
+        <div class="zone11">Zone 5</div>
+      </button>
+      </a>
+      <a href="{{url_for('uploadFile')}}">
+      <button class="zone4" autofocus id="zone4">
+        <div class="zone11">Zone 4</div>
+      </button>
+      </a>
+      <div class="object-wrapper">
+        <button class="object" autofocus id="object">
+          <img class="vector-icon" alt="" src="/static/public/vector.svg" />
+
+          <img class="vector-icon1" alt="" src="/static/public/vector1.svg" />
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,168 @@
+.bg-image-icon2 {
+  position: absolute;
+  top: 0;
+  left: 1px;
+  width: 1440px;
+  height: 720px;
+  object-fit: cover;
+}
+.parking-zones {
+  position: absolute;
+  top: 112px;
+  left: calc(50% - 201px);
+  font-size: var(--font-size-45xl);
+  font-weight: 600;
+}
+.about-link,
+.menu-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-darkorange-400);
+  width: 1441px;
+  height: 85px;
+}
+.about-link {
+  text-decoration: none;
+  top: 39.22px;
+  left: 1246.55px;
+  background-color: var(--color-black);
+  width: 62.86px;
+  height: 18.07px;
+  cursor: pointer;
+}
+.contactus-link,
+.payment-link {
+  text-decoration: none;
+  top: 32px;
+  color: inherit;
+}
+.payment-link {
+  position: absolute;
+  left: 950px;
+  font-weight: 600;
+}
+.contactus-link {
+  left: 1090px;
+  cursor: pointer;
+}
+.contactus-link,
+.logout-link,
+.zone11 {
+  position: absolute;
+  font-weight: 600;
+}
+.logout-link {
+  text-decoration: none;
+  top: 32px;
+  left: 1346px;
+  color: inherit;
+}
+.zone11 {
+  top: 27px;
+  left: 49px;
+  font-size: var(--font-size-21xl);
+  font-family: var(--font-koho);
+  color: var(--color-black);
+  text-align: left;
+  display: inline-block;
+  width: 150.8px;
+  height: 43px;
+}
+.zone1,
+.zone2,
+.zone3,
+.zone4,
+.zone5,
+.zone6 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--color-darkorange-500);
+  position: absolute;
+  top: 242px;
+  left: 251px;
+  width: 215px;
+  height: 108px;
+  overflow: hidden;
+}
+.zone2,
+.zone3,
+.zone4,
+.zone5,
+.zone6 {
+  left: 621px;
+}
+.zone3,
+.zone4,
+.zone5,
+.zone6 {
+  left: 985px;
+}
+.zone4,
+.zone5,
+.zone6 {
+  top: 464px;
+}
+.zone4,
+.zone5 {
+  left: 621px;
+}
+.zone4 {
+  left: 251px;
+}
+.vector-icon,
+.vector-icon1 {
+  position: absolute;
+  height: 100%;
+  width: 83.03%;
+  top: -99.63%;
+  right: 100.11%;
+  bottom: 99.63%;
+  left: -83.14%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.vector-icon1 {
+  height: 82.51%;
+  width: 26.97%;
+  top: -90.8%;
+  right: 173.14%;
+  bottom: 108.3%;
+  left: -100.11%;
+}
+.object {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  height: 90.64%;
+  width: 67.91%;
+  top: 98.64%;
+  right: -41.15%;
+  bottom: -89.28%;
+  left: 73.24%;
+  transform: rotate(179.78deg);
+  transform-origin: 0 0;
+}
+.object-wrapper {
+  position: absolute;
+  top: 24px;
+  left: 36px;
+  width: 58px;
+  height: 25px;
+  overflow: hidden;
+}
+.user-interface {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 713px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+  font-family: var(--font-koho);
+}

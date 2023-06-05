@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=brandico">
+        <link rel="stylesheet" href="/static/index.css">
+    </head>
+
+
+
+    <body id="aboutPage">
+        <div class="navbar" id="nav">
+            <div class="navbar-left">
+                <label style="color: white;" for="">Space Finder</label>
+            </div>
+            <div class="navbar-right">
+                <a href="{{url_for('index')}}" >Home</a>
+                <a href="{{url_for('aboutus')}}" >About Us</a>
+                <a href="{{url_for('contactus')}}" >Contact Us</a>
+                <a href=".//" class="active">Sign In</a>
+            </div>
+        </div>
+        <hr style="background-color: white;height: 2px;">
+
+        <div class="heading">
+            <h4>Sign In</h4>
+        </div>
+        <div class="contactUsBox">
+            <form action="{{url_for('login')}}" method="post">
+                <div class="row">
+                    <div class="column" style="width: 100% ;"><input type="text" name="email" id="username" placeholder="Enter your email."></div>
+                </div>
+                <div class="row">
+                    <div class="column" style="width: 100% ;"><input type="text" name="password" id="password" placeholder="Enter your password."></div>
+                </div>
+                <div class="row">
+                    
+                        <div class="column" color=#ff7f08 style="width: 50%;">
+                        <button class="moreInfoButton" type="submit" name="submit" value="Sign In"> Sign In
+                        </div>
+                        </button>
+                    
+                    </div>
+                    <div class="column" style="width: 50%; padding-top: 15px;">
+                        <div class="registerNow">
+                        <a href="{{url_for('signup')}}"><label>Register Now</label></a>
+                    </div>
+                </div>
+                </div>    
+            </form>         
+        </div>
+    </body>
+</html>

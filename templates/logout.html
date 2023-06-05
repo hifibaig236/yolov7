@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="/static/.css" />
+    <link rel="stylesheet" href="/static/alert_popup.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Kantumruy:wght@700&display=swap"/>
+    <style>
+      @font-face {
+        :font-family: "KoHo";
+        src: url("KoHo SemiBold 600.ttf");
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="alert-popup">
+      <div class="popup-frame">
+        
+        <div class="alert">Alert!</div>
+        <div class="are-you-sure">Are you sure you want to logout?</div>
+        <button class="ok-button-yes" autofocus id="popupokButtonYes">
+          <div class="yes">Yes</div>
+        </button>
+        <button class="ok-button-no" autofocus id="popupokButtonNo">
+          <div class="no">No</div>
+        </button>
+      </div>
+    </div>
+
+    <script>
+      var popupokButtonYes = document.getElementById("popupokButtonYes");
+      if (popupokButtonYes) {
+        popupokButtonYes.addEventListener("click", function (e) {
+          window.location.href = "/";
+        });
+      }
+      
+      var popupokButtonNo = document.getElementById("popupokButtonNo");
+      if (popupokButtonNo) {
+        popupokButtonNo.addEventListener("click", function (e) {
+          var popup = e.currentTarget.parentNode;
+          function isOverlay(node) {
+            return !!(
+              node &&
+              node.classList &&
+              node.classList.contains("popup-overlay")
+            );
+          }
+          while (popup && !isOverlay(popup)) {
+            popup = popup.parentNode;
+          }
+          if (isOverlay(popup)) {
+            popup.style.display = "none";
+          }
+        });
+      }
+      </script>
+  </body>
+</html>

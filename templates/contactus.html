@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact</title>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=brandico">
+        <link rel="stylesheet" href="/static/index.css">
+    </head>
+
+
+
+    <body id="aboutPage">
+        <div class="navbar" id="nav">
+            <div class="navbar-left">
+                <label style="color: white;" for="">Space Finder</label>
+            </div>
+            <div class="navbar-right">
+                <a href="{{url_for('index')}}" >Home</a>
+                <a href="{{url_for('aboutus')}}">About Us</a>
+                <a href="{{url_for('contactus')}}" class="active">Contact Us</a>
+                <a href="{{url_for('loginPage')}}">Sign In</a>
+            </div>
+        </div>
+        <hr style="background-color: white;height: 2px;">
+
+        <div class="heading">
+            <h4>Contact US</h4>
+        </div>
+        <div class="contactUsBox">
+            <div class="row">
+                <div class="column" style="width: 50% ;"><input style="width: 80% ;" type="text" name="name" id="name" placeholder="Your Name"></div>
+                <div class="column" style="width: 50% ;"><input style="width: 100% ;" type="text" name="emailaddress" id="emailaddress" placeholder="Your Email Address"></div>
+            </div>
+            <div class="row">
+                <div class="column" style="width: 100% ;"><input type="text" name="name" id="name" placeholder="Subject"></div>
+            </div>
+            <div class="row">
+                <div class="column" style="width: 100% ;"><textarea type="text" cols="102" rows="10" placeholder="Leave a message"></textarea></div>
+            </div>
+            
+            <div class="row" style="text-align:center ;">
+                <a href="{{url_for('contactus')}}">
+                <button class="moreInfoButton">Send Message</button>
+                </a>
+            </div>
+        </div>
+    </body>
+</html>

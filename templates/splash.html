@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/static/index.css">
+       
+
+    </head>
+    <body id="homePage">
+        <div class="navbar" id="nav">
+            <div class="navbar-left">
+                <label style="color: white;" for="">Space Finder</label>
+            </div>
+            <div class="navbar-right">
+                <a href="{{url_for('aboutus')}}">About Us</a>
+                <a href="{{url_for('contactus')}}">Contact Us</a>
+                <a href="{{url_for('loginPage')}}">Sign In</a>
+            </div>
+        </div>
+        <hr style="background-color: white;height: 2px;">
+        <div class="centeredMainBox">
+            <h1>Space Finder</h1>
+            <p>We are not just making parking easier,they are about creating more livable and sustainable cities</p>
+            <button class="moreInfoButton" ><a class="aclass" href="/signup"> GET STARTED</a></button>
+        </div>
+    </body>
+</html>

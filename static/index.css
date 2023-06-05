@@ -1,0 +1,328 @@
+#homePage {
+    background-image: url("./public/splash-.png");
+    width: 100%;
+    height: 30%;
+
+    /* Center and scale the image nicely */
+    background-repeat: no-repeat;
+}
+#aboutPage {
+    background-color:#ffffff;
+}
+
+/* navbar */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+
+    overflow: hidden;
+    text-transform: uppercase;
+    top: 0;
+    background-color: #ff7f08;
+    font-family:'Dosis', sans-serif;
+}
+
+.navbar a {
+    float: left;
+    top: 0;
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    line-height: 4rem;
+    font-weight: 500;
+}
+
+.navbar-right .active {
+    background-color: #ff7f08;
+    color: white;
+}
+
+.navbar .icon {
+    display: none;
+}
+
+.navbar-left {
+    float: left;
+    top: 0;
+    float: left;
+    top: 0;
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    text-decoration: bold;
+    line-height: 4rem;
+    font-weight: 500;
+}
+
+.navbar-right {
+    float: right;
+    top: 0;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.navbar a:hover {
+    background-color: #ff7f00;
+    color: #ffffff;
+
+}
+
+.centeredMainBox {
+    height: 300px;
+    background-color: rgba(202, 202, 202, 0.7);
+    color: white;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 70%;
+    padding: 20px;
+    text-align: center;
+}
+
+.centeredMainBox h1 {
+    margin-top: 2%;
+    font-family: 'Dosis', sans-serif;
+    font-size: 60px;
+    color: #ff7f08;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 1;
+}
+
+.centeredMainBox p {
+    font-family: 'Dosis', sans-serif;
+    color: #ffffff;
+    display: block;
+    text-align: center;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    line-height: 1.2;
+    font-size: 1.5rem;
+}
+.centeredMainBox .moreInfoButton{
+    margin-top: 2%;
+    font-family: 'Dosis', sans-serif;
+    padding: 10px 5px;
+    width: 20%;
+    font-size: 30px;
+    border: 2px solid red;
+    background-color: #ff7f08;
+    color: #ffffff;
+    cursor: pointer;
+    text-align: center;
+    line-height: 1;
+    animation: shake 5s;
+    animation-iteration-count: infinite;
+   
+}
+.centeredMainBox .moreInfoButton .aclass {
+  color: white;
+  text-decoration: none; 
+}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+  .heading{
+      margin-top: 2%;
+      margin-bottom: 2%;
+      text-align: center;
+  }
+  .heading h4{
+    font-family: 'Dosis', sans-serif;
+    font-size: 45px;
+    color: #ff7f08;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 1;
+  }
+  /* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .content{
+      margin-left: 10%;
+      margin-right: 10%;
+      
+  }
+
+
+  .content p{
+    font-family: 'Dosis', sans-serif;
+    color: #ff7f08;
+    display: block;
+    text-align: left;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    line-height: 1.2;
+    font-size: 1.5rem;
+  }
+  .content .moreInfoButton {
+    margin-top: 2%;
+    font-family: 'Dosis', sans-serif;
+    padding: 5px 5px;
+    width: 20%;
+    font-size: 24px;
+    background-color: #ff7f08;
+    color: #ffffff;
+    cursor: pointer;
+    text-align: center;
+    line-height: 1;
+}
+
+             /* social media button */
+
+             /* brandico */
+             [class*="brandico-"]:before {
+               font-family: 'brandico', sans-serif;
+             }
+             
+             ul.social-buttons {
+               text-align: center;
+               margin-top: 50px;
+             }
+             
+             ul.social-buttons li {
+               display: inline-block;
+               margin: 0 10px;
+             }
+             
+             ul.social-buttons li a {
+               width: 60px;
+               height: 60px;
+               display: block;
+               border-radius: 50px;
+               text-decoration: none;
+               font-size: 30px;
+               line-height: 60px;
+               color: white;
+             }
+             
+             ul.social-buttons li a.brandico-twitter-bird {
+               background-color: #4099FF;
+             }
+             
+             ul.social-buttons li a.brandico-facebook {
+               background-color: #3B5998;
+             }
+             
+             ul.social-buttons li a.brandico-instagram {
+               background-color: #3f729b;
+             }
+             
+             ul.social-buttons li a.brandico-vimeo {
+               background-color: #4EBBFF;
+             }
+             
+             ul.social-buttons li a.brandico-linkedin {
+               background-color: #0e76a8;
+             }
+             
+             /*Demo 1*/
+             ul#demo1 li a {
+               transition: transform 0.2s linear;
+             }
+             
+             ul#demo1 li:hover a {
+               transform: translateY(-10px);
+               background-color: #0e76a8;
+             }
+             
+
+.contactUsBox{
+    margin-left: 30%;
+    margin-right: 30%;
+    
+}
+.faceDetectionBox{
+  margin-left: 10%;
+  margin-right: 10%;
+  
+}
+.faceDetectionBox label{
+  font-family: 'Dosis', sans-serif;
+  font-size: 30px;
+  color: #013646;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+.contactUsBox .moreInfoButton , .faceDetectionBox .moreInfoButton {
+    margin-top: 2%;
+    font-family: 'Dosis', sans-serif;
+    padding: 10px 5px;
+    width: 40%;
+    font-size: 24px;
+    background-color: #177388;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 1;
+}
+.contactUsBox input[type='text'],textarea,input[type='file'],input[type='email'],input[type='password'],.faceDetectionBox input[type='text'],textarea,input[type='file']{
+    width: 100%;
+    padding: 2%;
+    font-family: 'Dosis', sans-serif;
+    color: #000000;
+    display: block;
+    text-align: left;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    line-height: 1.2;
+    font-size: 1.2rem;
+    border: 1px solid #013646;
+}
+.registerNow label{
+  font-family: 'Dosis', sans-serif;
+  font-size: 30px;
+  padding-top: 30px;
+  color: #013646;
+  text-align: center;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  line-height: 1;
+}
+.registerNow label:hover{
+  text-decoration: underline;
+}

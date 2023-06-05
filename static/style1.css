@@ -1,0 +1,99 @@
+html,
+body {
+  height: 100%;
+}
+
+/* navbar */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+
+  overflow: hidden;
+  text-transform: uppercase;
+  top: 0;
+  background-color: #ff7f08;
+  font-family:'Dosis', sans-serif;
+}
+
+.navbar a {
+  float: left;
+  top: 0;
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 4rem;
+  font-weight: 500;
+}
+
+.navbar-right .active {
+  background-color: #ff7f08;
+  color: white;
+}
+
+.navbar .icon {
+  display: none;
+}
+
+.navbar-left {
+  float: left;
+  top: 0;
+  float: left;
+  top: 0;
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  text-decoration: bold;
+  line-height: 4rem;
+  font-weight: 500;
+}
+
+.navbar-right {
+  float: right;
+  top: 0;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.navbar a:hover {
+  background-color: #ff7f00;
+  color: #ffffff;
+
+}
+
+body {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
