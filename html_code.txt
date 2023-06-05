@@ -1,0 +1,32 @@
+
+</script>
+ <div class="box">
+<!-- script for opening a webcam and performing detections -->
+<button id="start-webcam" onclick="startWebcam()" class="btn btn-lg btn-primary btn-block">Start Webcam</button>
+<script>
+function startWebcam() {
+  window.location.href = "/webcam_feed";
+}
+</script>
+<!-- webcam ends here -->
+
+ </div>
+  <div class="box">
+
+<!-- script for opening a rtsp and performing detections -->
+<button id="start-rtsp" onclick="startrtsp()" class="btn btn-lg btn-primary btn-block">Start RTSP Stream</button>
+<script>
+function startrtsp() {
+  window.location.href = "/rtsp_feed";
+}
+</script>
+<!-- rtsp ends here -->
+ </div>
+ </div>
+
+
+
+<script>
+document.getElementById("my-image").onload = function() {
+  this.style.display = "block";
+};

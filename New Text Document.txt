@@ -1,0 +1,20 @@
+
+
+@app.route('/signup',methods=['GET','POST'])
+def signup():
+    if request.method=='POST':
+        try:
+            name=request.form['email']
+            mail=request.form['password']
+            con=sqlite3.connect("database.db")
+            cur=con.cursor()
+            cur.execute("insert into customer(name,address,contact,mail)values(?,?,?,?)",(name,address,contact,mail))
+            con.commit()
+            flash("Record Added  Successfully","success")
+        except:
+            flash("Error in Insert Operation","danger")
+        finally:
+            return redirect(url_for("signin"))
+            con.close()
+
+    return render_template('signin.html')
